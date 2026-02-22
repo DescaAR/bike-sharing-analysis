@@ -30,7 +30,7 @@ st.set_page_config(page_title="Bike Sharing Dashboard 🚲", layout="wide")
 def load_data():
     # Mengambil data dari folder yang sama
     df_day = pd.read_csv("dashboard/main_data.csv")
-    df_hour = pd.read_csv("dashboard/main_data_hour.csv")
+    df_hour = pd.read_csv("dashboard/hour.csv")
     df_day['dteday'] = pd.to_datetime(df_day['dteday'])
     return df_day, df_hour
 
