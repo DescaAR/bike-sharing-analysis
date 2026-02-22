@@ -7,6 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1s_7w1vAVzzjFaiiG_ipmuPwSPhUwGqFp
 """
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "main_data.csv")
+
+df_day = pd.read_csv(file_path)
+
 from collections import defaultdict
 from pathlib import Path
 import sqlite3
